@@ -31,7 +31,7 @@ const Rig = () => {
       currentAngleY.current = THREE.MathUtils.lerp(currentAngleY.current, targetAngleY.current, 0.05);
   
       // Calc new cam pos
-      camera.position.x = radius.current * Math.sin(speed.current + currentAngleX.current);
+      camera.position.x = - radius.current * Math.sin(speed.current + currentAngleX.current);
       camera.position.z = radius.current * Math.cos(speed.current + currentAngleX.current);
       camera.position.y = radius.current * Math.sin(speed.current + currentAngleY.current); 
   

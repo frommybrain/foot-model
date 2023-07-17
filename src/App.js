@@ -18,7 +18,7 @@ export default function App() {
         shadows={{ type: 'accumulative', color: '#e2a54e', colorBlend: 2, opacity: 1, size: 4096 }}
         adjustCamera={false}
         environment="city">
-        <group position={[0,0,0]} rotation={[0,-Math.PI/8,0]} >
+        <group position={[0,0,0]} rotation={[0,0,0]} >
         <Foot />
         <FriesBox />
         </group>
